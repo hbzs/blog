@@ -5,9 +5,9 @@
   <subtitle>学习、记录、总结、提升</subtitle>
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
+  <link href="http://blog.hbzshome.com/"/>
   <updated>2017-12-24T02:08:04.256Z</updated>
-  <id>http://yoursite.com/</id>
+  <id>http://blog.hbzshome.com/</id>
   
   <author>
     <name>黑白之上</name>
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Hello World</title>
-    <link href="http://yoursite.com/2017/12/21/hello-world/"/>
-    <id>http://yoursite.com/2017/12/21/hello-world/</id>
+    <link href="http://blog.hbzshome.com/2017/12/21/hello-world/"/>
+    <id>http://blog.hbzshome.com/2017/12/21/hello-world/</id>
     <published>2017-12-21T15:59:22.358Z</published>
     <updated>2017-12-24T02:08:04.256Z</updated>
     

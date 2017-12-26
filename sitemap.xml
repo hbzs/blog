@@ -2,23 +2,16 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://yoursite.com/2017/12/21/hello-world/</loc>
+    <loc>http://blog.hbzshome.com/about.html</loc>
+    
+    <lastmod>2017-12-26T14:24:38.153Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.hbzshome.com/2017/12/21/hello-world/</loc>
     
     <lastmod>2017-12-24T02:08:04.256Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about.html</loc>
-    
-    <lastmod>2017-12-21T18:05:13.304Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/AboutMe.html</loc>
-    
-    <lastmod>2017-12-21T17:59:02.274Z</lastmod>
     
   </url>
   
