@@ -2,16 +2,23 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>http://blog.hbzshome.com/about.html</loc>
+    <loc>http://blog.hbzshome.com/2017/12/21/hello-world/</loc>
     
-    <lastmod>2017-12-26T14:24:38.153Z</lastmod>
+    <lastmod>2018-01-15T02:10:51.229Z</lastmod>
     
   </url>
   
   <url>
-    <loc>http://blog.hbzshome.com/2017/12/21/hello-world/</loc>
+    <loc>http://blog.hbzshome.com/tags/index.html</loc>
     
-    <lastmod>2017-12-24T02:08:04.256Z</lastmod>
+    <lastmod>2018-01-15T00:34:11.579Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://blog.hbzshome.com/about.html</loc>
+    
+    <lastmod>2017-12-26T14:24:38.153Z</lastmod>
     
   </url>
   
