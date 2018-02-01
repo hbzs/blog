@@ -17,6 +17,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" media="all" href="/lib/Han/dist/han.min.css?v=3.3">
+
 
 
 
@@ -37,6 +41,10 @@
 
 
 
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
 
 
 
@@ -96,8 +104,8 @@
     root: '/',
     scheme: 'Mist',
     version: '6.0.1',
-    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
-    fancybox: false,
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":true},
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
@@ -187,18 +195,6 @@
     <ul id="menu" class="menu">
       
         
-        <li class="menu-item menu-item-home">
-          <a href="/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-home"></i> <br />首页</a>
-        </li>
-      
-        
-        <li class="menu-item menu-item-about">
-          <a href="/about/" rel="section">
-            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
-        </li>
-      
-        
         <li class="menu-item menu-item-tags">
           <a href="/tags/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />标签</a>
@@ -214,6 +210,12 @@
         <li class="menu-item menu-item-archives">
           <a href="/archives/" rel="section">
             <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />归档</a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            <i class="menu-item-icon fa fa-fw fa-user"></i> <br />关于</a>
         </li>
       
 
@@ -379,13 +381,14 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body han-init-context" itemprop="articleBody">
 
       
       
 
       
         <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<p><img src="http://7te9gy.com1.z0.glb.clouddn.com/2016120976469%E7%B2%89%E4%B8%9D%E7%BD%91%E6%89%93%E6%8A%95%E6%B4%BB%E5%8A%A8.png" alt=""></p>
 <h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
 <p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a> You know </p>
 <h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
@@ -460,22 +463,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/01/15/blog/" rel="prev" title="hello test2">
-                hello test2 <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
       
 
       
@@ -552,6 +539,8 @@ var jiathis_config={
 
   <aside id="sidebar" class="sidebar">
     
+      <div id="sidebar-dimmer"></div>
+    
     <div class="sidebar-inner">
 
       
@@ -586,7 +575,7 @@ var jiathis_config={
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -783,7 +772,11 @@ var jiathis_config={
 
 
 
+  
 
+
+
+  
 
 
 
@@ -810,6 +803,16 @@ var jiathis_config={
   
   
     <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/canvas-nest/canvas-nest.min.js"></script>
   
 
 
