@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[Hello World]]></title>
-    <url>%2F2017%2F12%2F21%2Fhello-world%2F</url>
-    <content type="text"><![CDATA[Welcome to Hexo! This is your very first post. Check documentation for more info. If you get any problems when using Hexo, you can find the answer in troubleshooting or you can ask me on GitHub. Quick StartCreate a new post1$ hexo new "My New Post" More info: Writing You know Run server1$ hexo server More info: Server Generate static files1$ hexo generate More info: Generating Deploy to remote sites1$ hexo deploy More info: Deployment 1234&lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css"&gt;或&lt;link rel="stylesheet" href="//cdn.bootcss.com/font-awesome/4.3.0/css/font-awesome.min.css"&gt;]]></content>
+    <title><![CDATA[《深入浅出 Webpack》读书笔记]]></title>
+    <url>%2F2017%2F12%2F21%2Fhead-first-webpack-notebook%2F</url>
+    <content type="text"><![CDATA[Webpack 是目前最流行的前端构建工具 按照入门、配置、实战、优化和原理的路线学习 编写时：迭代到 3.8.1，笔记时：最新稳定版本 3.10.0，预览版本 4.0.0-beta.0 前端的发展模块化 把一个复杂的系统分解到多个模块以方便编码 以前是通过命名空间方式组织代码。缺点 命名空间冲突（jQuery 库和 Zepto 库均被放在 windows.$ 下） 无法合理地管理项目的依赖和版本 无法方便地控制依赖的加载顺序 CommonJS 使用广泛的 JavaScript 模块化规范 得益于 Node.js 采用了这种方式 核心思想 require 方法同步加载的其他模块 module.exports 导出需要暴露的接口 代码 1234// 导入const moduleA = require('./moduleA');// 导出module.exports = moduleA.someFunc; 优点 可复用于 Node.js 环境下运行，例如做「同构应用」 同构的意义就在于任何一段代码（当然有些特殊代码例外）都能同时跑在客户端与服务器端 通过 NPM 发布的很多第三方模块都采用了此规范 缺点：无法直接运行在浏览器环境下，必须通过工具转换为标准的 ES5 AMD 也是一种 JavaScript 模块化规范 （与 CommonJS 最大的不同是）采用异步的方式去加载依赖的模块 主要是为了解决针对浏览器环境的模块化问题 最具代表性的实现是 requirejs 代码 1234567// 定义一个模块define('module', ['dep'], function(dep) &#123; return exports;&#125;);// 导入和使用require(['module'], function(module) &#123;&#125;); 优点 可在不转换代码的情况下直接在浏览器中运行 可异步加载依赖 可并行加载多个依赖 代码可运行在浏览器环境和 Node.js 环境下 缺点：无原生支持，需先导入实现了 AMD 的库 ES6 模块化 语言层面上实现了模块化 代码 12345678// 导入import &#123; readFile &#125; from 'fs';import React from 'react';// 导出export function hello() &#123;&#125;;export default &#123; // ...&#125;; 缺点：「目前」无法直接运行在大部分 JavaScript 运行环境下，需转换为 ES5 注：现在的浏览器支持 - ECMAScript 6 compatibility table 样式文件中的模块化 SCSS 中的 @import 新框架React 引入 JSX 语法到 JavaScript 语言层面，以更灵活地控制视图的渲染逻辑 无法直接运行，必须经过转换 Vue 把一个组件相关的 HTML 模版、JavaScript 逻辑代码、CSS 样式代码都写在一个文件里 非常直观 Angular2 推崇采用 TypeScript 语言去开发应用 通过注解的语法描述组件的各种属性 新语言 可以提升编码效率 必须把源代码转换成可以直接在浏览器环境下运行的代码 ES6 ECMAScript 6.0（简称 ES6） JavaScript 语言的下一代标准 语言层面为 JavaScript 引入了很多新语法和 API ，使得 JavaScript 语言可以用来编写复杂的大型应用程序 例如 规范模块化 Class 语法 用 let 声明代码块内有效的变量 ，用 const 声明常量 箭头函数 async 函数 Set 和 Map 数据结构 Babel：为了解决兼容性问题，需要把 ES6 代码转换成 ES5 代码 TypeScript JavaScript 的一个超集 支持 ES6 的所有功能 提供了静态类型检查 在编译阶段找出可能存在的问题 缺点 相对于 JavaScript 更加啰嗦 无法直接运行在浏览器或 Node.js 环境下 Flow JavaScript 的一个超集 提供静态类型检查 （和 TypeScript 相似但更灵活）可以让你只在需要的地方加上类型检查 SCSS CSS 预处理器 优点 方便地管理代码 抽离公共的部分，通过逻辑写出更灵活的代码 类似：LESS]]></content>
       <categories>
-        <category>wiki</category>
+        <category>Web</category>
+        <category>Webpack</category>
       </categories>
       <tags>
-        <tag>hexo</tag>
-        <tag>start</tag>
+        <tag>Webpack</tag>
+        <tag>读书笔记</tag>
       </tags>
   </entry>
 </search>
